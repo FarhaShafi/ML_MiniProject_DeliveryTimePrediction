@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Food Delivery Time Prediction </title>
+<link rel ="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body background ="/static/images/background.jpg" align="left">
+             
+    <div class ='input form'>
+        <form action ='/predict' method="POST">
+            <h1 id="heading">   Food Delivery Time Prediction </h1>
+            <form>   
+                              
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Item Name</label>
+                    <input type="text" class="form-control" id="Item_Name" name="Item_Name" placeholder="Item Name">
+                </div>
+                
+                                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Quantity</label>
+                    <input type="text" class="form-control" id="Quantity" name="Quantity" placeholder="Quantity">
+                </div>
+                
+                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Total Price</label>
+                    <input type="text" class="form-control" id="Total_Price" name="Total_Price" placeholder="Total Price">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">City</label>
+                    <input type="text" class="form-control" id="City" name="City" placeholder="City">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Payment Method</label>
+                    <select class="form-select" id="Payment_Method" name="Payment_Method" aria-label="Payment_Method">
+                      <option selected >--Select Payment Method--</option>
+                      <option value ="0">Wallet</option>
+                      <option value="1">Credit Card</option>
+                      <option value="2">Cash</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Order Status</label>
+                    <select class="form-select" id="Order_Status" name="Order_Status" aria-label="Order_Status">
+                      <option selected >--Select Order Status--</option>
+                      <option value ="0">Delivered</option>
+                      <option value="1">In Transit</option>
+                      <option value="2">Cancelled</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Driver Vehicle</label>
+                    <select class="form-select" id="Driver_Vehicle" name="Driver_Vehicle" aria-label="Driver_Vehicle">
+                      <option selected >--Select Driver Vehicle--</option>
+                      <option value ="0">Bicycle</option>
+                      <option value="1">Car</option>
+                      <option value="2">Motorbike</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                     <label for="exampleInputEmail1"   class="form-label">Delivery Distance km</label>
+                     <input type="text" class="form-control" id="Delivery_Distance_km" name="Delivery_Distance_km" placeholder="Delivery Distance km">
+                </div> 
+
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Traffic Level</label>
+                    <select class="form-select" id="Traffic_Level" name="Traffic_Level" aria-label="Traffic Level">
+                      <option selected >--Select Traffic Level--</option>
+                      <option value = "0">High</option>
+                      <option value = "1">Low</option>
+                      <option value = "2">Medium</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1"   class="form-label">Driver Availability</label>
+                    <select class="form-select" id="Driver_Availability" name="Driver_Availability" aria-label="Driver Availability">
+                      <option selected >--Select Driver Availability--</option>
+                      <option value = "0">Offline</option>
+                      <option value = "1">Online</option>
+                    </select>
+                </div>
+
+                
+                <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                
+                <div class="text-center" style="margin-top: 20px;">
+                <h2>{{ prediction_text }}</h2>
+                </div>
+            </form>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+                  
+                  
+                
+                
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
